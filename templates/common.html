@@ -6,20 +6,26 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <html lang="en">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title> {% block title %}Fist Project Title{% endblock %}</title>
+        <link rel="icon" href="https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+
+        <div class="container">
+        {% block contents %}
+        {% endblock %}
+        </div>
+        
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    
     </body>
 </html>
+
 
 
